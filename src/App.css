@@ -1,0 +1,95 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header{
+  padding: 20px;
+  text-align: center;
+  font-size: xx-large;
+  font-family: sans-serif;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.container{
+  width: 33vw;
+  height: 100%;
+}
+
+.balance-container{
+  margin-top: 100px;
+  font-family: Helvetica, sans-serif;
+  font-size:large;
+  
+}
+
+.balance-container h4{
+  font-weight: lighter;
+}
+
+.income-expense{
+  display: flex;
+}
+
+.income-expense{
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  margin-top: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.income-container{
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.income-container div{
+  color: rgb(109, 214, 109);
+  font-size: xx-large;
+}
+
+.expense-container{
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.expense-container div{
+  color: rgb(229, 99, 99);
+  font-size: xx-large;
+}
+
+.list li {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; /* Creates 3 columns: left (auto), center (1fr), right (auto) */
+  align-items: center;  /* Ensures vertical alignment of items within the grid */
+  padding: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  font-size: x-large;
+}
+
+.list li .delete-btn {
+  border: none;
+  background: none;
+}
+
+.minus{
+  border-right: 10px rgb(229, 99, 99) solid;
+}
+
+.plus{
+  border-right: 10px rgb(109, 214, 109) solid;
+}
+
+
