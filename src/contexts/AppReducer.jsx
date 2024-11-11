@@ -2,6 +2,7 @@ const AppReducer=(state,action)=>{
     switch(action.type){
 
         case 'DELETE_TRANSACTION':
+            localStorage.removeItem(`transaction${action.payload}`);
             return{
                 ...state,
                 
@@ -10,7 +11,7 @@ const AppReducer=(state,action)=>{
 
         case 'ADD_TRANSACTION':
             const transaction={id:state.transactions.length+1,text:action.payload.text,amount:action.payload.amount};
-            console.log(transaction);
+            localStorage.setItem('transaction'+transaction.id,JSON.stringify(transaction));
             return{
                 ...state,
 
